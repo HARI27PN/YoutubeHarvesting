@@ -31,18 +31,18 @@ mycoll3 = db["comments_details"]
 
 # -----------------------------------------Connecting with MySQL Workbench Database------------------------------------
 
-hostname = "your host name goes here"
-database = "your database name goes here"
-username = "your username goes here"
-pwd = "your password goes here"
+# hostname = "your host name goes here"
+# database = "your database name goes here"
+# username = "your username goes here"
+# pwd = "your password goes here"
 
-mydb = sql.connect(host=hostname,
-                   user=username,
-                   password=pwd,
-                   database=database
-                   )
-# If buffered is True , the cursor fetches all rows from the server after an operation is executed.
-cursor1 = mydb.cursor(buffered=True)
+# mydb = sql.connect(host=hostname,
+#                    user=username,
+#                    password=pwd,
+#                    database=database
+#                    )
+# # If buffered is True , the cursor fetches all rows from the server after an operation is executed.
+# cursor1 = mydb.cursor(buffered=True)
 
 # ----------------------------------------------Connecting with YouTube API------------------------------------------
 youtube = build('youtube', 'v3', developerKey="your api_key goes here")
